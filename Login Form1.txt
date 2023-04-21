@@ -1,0 +1,325 @@
+//Design class
+
+
+//Implementation classes
+
+
+// Login Page
+
+
+package com.InstaLoginforms;
+
+import java.awt.Font;
+
+import javax.management.loading.PrivateClassLoader;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
+public class Login extends JFrame 
+{
+	private JLabel jl, jlu, jln;
+	private JTextField jt;
+	private JPasswordField jp;
+	private JButton jb;
+	private JLabel jl1;
+	private JButton jb1;
+	private JButton jb2;
+	private JLabel jl2;
+	private JButton jb3;
+	
+public Login()
+	{
+	jl=new JLabel("INSTAGRAM");
+	jl.setFont(new Font("TimesRoman", Font.ITALIC, 20));
+	jlu=new JLabel("Username");
+	jln=new JLabel("Password"); 
+	jt=new JTextField("Phone number, Username or email");
+	jp=new JPasswordField("Password");
+	jb=new JButton("Login");
+	jl1=new JLabel("------------------	or	------------------");
+	jl1.setFont(new Font("Bookmanold", Font.BOLD,16));
+	jb1=new JButton("Log in with Facebook");
+	jb2=new	JButton("Forgot password?");
+	jl2=new JLabel("Don't have account?");
+	jb3=new JButton("Sing up");
+	//	calling container with empty space
+	setLayout(null);
+	
+	// After calling, then  arrange components into frame particular position
+	
+	jl.setBounds(600, 35, 180, 90);
+	
+	jlu.setBounds(520, 100, 120, 40);
+	jln.setBounds(520, 140, 120, 40);
+	jt.setBounds(600, 110, 200, 20);
+	//	To set data non editable
+	//	jt.setEditable(false);
+	jp.setBounds(600, 150, 200, 20);
+	jb.setBounds(570, 190, 140, 20);
+	jl1.setBounds(530, 200, 220, 80);
+	jb1.setBounds(545, 280, 180, 20);
+	jb2.setBounds(560, 320, 150, 20);
+	jl2.setBounds(520, 400, 120, 40);
+	jb3.setBounds(650, 410, 100, 20);
+	//	the above value add in conatiner
+	
+	add(jl);
+	add(jlu);
+	add(jln);
+	add(jt);
+	add(jp);
+	add(jb);
+	add(jl1);
+	add(jb1);
+	add(jb2);
+	add(jl2);
+	add(jb3);
+	}
+
+
+}
+
+
+/*===================*/
+
+//	Register or create account page
+
+package com.InstaLoginforms;
+
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class Login_create_page extends JFrame {
+	private JLabel jl, jl1, jl2, jl3, jl4;
+	private JButton jb, jb1, jb2;
+	private JTextField jt, jt1, jt2;
+	private JPasswordField jp;
+	
+	public Login_create_page()
+	{
+		jl=new JLabel("INSTAGRAM");
+		jl.setFont(new Font("TimesRoman", Font.ITALIC, 20));
+		jl1=new JLabel("Sign up to see photos and videos from your friends.");
+		jl1.setFont(new Font("Bookmanold",Font.ITALIC , 16));
+		jb=new JButton("Log in with Facebook");
+		jl2=new JLabel("------------------	or	------------------");
+		jl2.setFont(new Font("Bookmanold", Font.BOLD,16));
+		jt=new JTextField("Phone number or email");
+		jt1=new JTextField("Full Name");
+		jt2=new JTextField("Username");
+		jp=new JPasswordField("Password");
+		jl3=new JLabel("People who use our service may have uploaded your contact information to Instagram.");
+		jb1=new JButton("Sing up");
+		jl4=new JLabel("Have an account?");
+		jb2=new JButton("Log in");
+		
+		//	calling container with empty space
+		setLayout(null);
+		
+		// After calling, then  arrange components into frame particular position
+		jl.setBounds(600, 35, 180, 90);
+		jl1.setBounds(500, 45, 400, 180);
+		jb.setBounds(535, 170, 230, 20);
+		jl2.setBounds(550, 180, 220, 80);
+		jt.setBounds(535, 250, 230, 30);
+		jt1.setBounds(535, 290, 230, 30);
+		jt2.setBounds(535, 330, 230, 30);
+		jp.setBounds(535, 370, 230, 30);
+		jl3.setBounds(450, 400, 500, 30);
+		jb1.setBounds(535, 450, 230, 30);
+		jl4.setBounds(550, 500, 200, 30);
+		jb2.setBounds(670, 505, 80, 20);
+		//	the above value add in conatiner
+		
+		add(jl);
+		add(jl1);
+		add(jb);
+		add(jl2);
+		add(jt);
+		add(jt1);
+		add(jt2);
+		add(jp);
+		add(jl3);
+		add(jb1);
+		add(jl4);
+		add(jb2);
+
+	}
+}
+
+/*======================*/
+
+//	Forgot password Updation page	
+
+
+package com.InstaLoginforms;
+
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class Forgot_password extends JFrame
+{
+	private JLabel jl, jl1, jl2, jl3,jl4;
+	private JButton jb, jb1, jb2;
+	private JTextField jt;
+	public Forgot_password()
+	{
+		jl=new JLabel("INSTAGRAM");
+		jl.setFont(new Font("TimesRoman", Font.ITALIC, 20));
+		jl1=new JLabel("Trouble Logging In?");
+		jl1.setFont(new Font("Bookmanold",Font.ITALIC , 16));
+		jl2=new JLabel("Enter your email, phone, or username and we'll");
+		jl2.setFont(new Font("Bookmanold",Font.ITALIC , 13));
+		jl3=new JLabel("send you a link to get back into your account.");
+		jl3.setFont(new Font("Bookmanold",Font.ITALIC , 13));
+		jt=new JTextField("Email, Phone or Username");
+		jb=new JButton("Send Login Link");
+		jl4=new JLabel("----------------------	or	----------------------");
+		jl4.setFont(new Font("Bookmanold", Font.BOLD,18));
+		jb1=new JButton("Create New Account");
+		jb2=new JButton("Back to Login");
+		
+		//	calling container with empty space
+		setLayout(null);
+
+		// After calling, then  arrange components into frame particular position
+
+		jl.setBounds(600, 35, 180, 90);
+		jl1.setBounds(585, 55, 400, 150);
+		jl2.setBounds(530, 70, 400, 175);
+		jl3.setBounds(535, 85, 400, 175);
+		jt.setBounds(535, 210, 265, 40);
+		jb.setBounds(535, 270, 265, 30);
+		jl4.setBounds(525, 300, 300, 80);
+		jb1.setBounds(535, 390, 265, 30);
+		jb2.setBounds(535, 450, 265, 30);
+		//	the above value add in conatiner
+		
+		add(jl);
+		add(jl1);
+		add(jl2);
+		add(jl3);
+		add(jt);
+		add(jb);
+		add(jl4);
+		add(jb1);
+		add(jb2);
+
+	}
+}
+
+/*======================*/
+
+//	Home Page
+
+package com.InstaLoginforms;
+
+import java.awt.Font;
+import java.awt.TextField;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+
+public class Home_page extends JFrame {
+
+	private JLabel jl;
+	private JTextField tf;
+	private JButton jb, jb1, jb2, jb3, jb4, jb5, jb6, jb7, jb8;
+	
+	public Home_page()
+	{
+	//	jl=new JLabel("INSTAGRAM HOME PAGE", new ImageIcon(.jpg), SwingConstants.CENTER);
+		
+		jl=new JLabel("INSTAGRAM");
+		jl.setFont(new Font("TimesRoman", Font.ITALIC, 20));
+		tf=new JTextField("Search");
+		jb=new JButton("Home");
+		jb1=new JButton("Messages");
+		jb2=new JButton("Post");
+		jb3=new JButton("Following");
+		jb4=new JButton("Request");
+		jb5=new JButton("Profile");
+		jb6=new JButton("INSTA STATUS BAR");
+		jb6.setFont(new Font("TimesRoman", Font.ITALIC, 30));
+		jb7=new JButton("FOLLOWER'S ACTIVITIES");
+		jb7.setFont(new Font("TimesRoman", Font.ITALIC, 30));
+		jb8=new JButton("Insta Noification");
+		jb8.setFont(new Font("TimesRoman", Font.ITALIC, 30));
+		
+		setLayout(null);
+		
+		
+		jl.setBounds(120,30, 180, 90);
+		tf.setBounds(420, 65, 200, 25);
+		jb.setBounds(750, 67, 70, 20);
+		
+		jb1.setBounds(830, 67, 95, 20);		
+		
+		jb2.setBounds(935, 67, 60, 20);
+		jb3.setBounds(1005, 67, 88, 20);
+		jb4.setBounds(1103, 67, 85, 20);
+		jb5.setBounds(1198, 67, 80, 20);
+		jb6.setBounds(170, 120, 650, 100);
+		jb7.setBounds(250, 240, 450, 450);
+		jb8.setBounds(840, 120, 350, 450);		
+		
+		add(jl);
+		add(tf);
+		add(jb);
+		add(jb1);
+		add(jb2);
+		add(jb3);
+		add(jb4);
+		add(jb5);
+		add(jb6);
+		add(jb7);
+		add(jb8);
+	}
+}
+
+/* ===================== */
+
+//	Execution class
+
+package com.InstaLoginforms;
+
+import java.awt.Font;
+
+public class InstaPage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//	Login l=new Login();
+	//	Login_create_page l=new Login_create_page();
+	//	Forgot_password l=new Forgot_password();
+		
+		Home_page l= new Home_page();
+		
+		l.setTitle("Instagram");
+		l.setFont(new Font("TimesRoman",Font.ITALIC, 20));
+		l.setSize(1366,786);
+		l.setDefaultCloseOperation(Login.EXIT_ON_CLOSE);
+		l.setVisible(true);
+		
+		
+	}
+
+}
